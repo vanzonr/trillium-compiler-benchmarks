@@ -7,7 +7,8 @@ Many of these code were taken from the Winter 2025 PHY1610 course on
 Scientific Computing assignments to test various compilers/
 
 The script called "joballbms.sh" compiles and runs all the codes
-mentioned below to test the compilers.
+mentioned below to test the compilers. This will also try to install a
+lot of missing libraries for some of the compilers.
 
 When run as "joballbms.sh bigrun" (or submitted woth sbatch), it runs
 and times larger variations of some of these codes to test the
