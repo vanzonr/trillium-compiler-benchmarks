@@ -45,9 +45,9 @@ else
 	    for c in ${COMPILERS[@]}; do
 		echo "INFO: Compiling and running code \"$code\" with $c" 1>&2
 		source ../setup-$c 1>&2
-		#make clean 1>&2
-		#make -j 10 1>&2
-		#make bigrun
+		make clean 1>&2
+		make -j 10 1>&2
+		make bigrun
 	    done
 	fi
 	cd ..
