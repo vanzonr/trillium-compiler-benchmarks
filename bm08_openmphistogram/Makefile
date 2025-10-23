@@ -37,7 +37,7 @@ clean:
 distclean: clean
 	$(RM) thist.dat thist-omp.dat morethist.dat morethist-omp.dat timestepdistribution timestepdistribution-omp stepnumbers.dat morestepnumbers.dat
 
-stepnumbers.dat:
+stepnumbers.dat: morestepnumbers.dat
 	wget https://pages.scinet.utoronto.ca/~rzon/$@
 
 morestepnumbers.dat:
