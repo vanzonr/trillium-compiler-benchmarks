@@ -1,0 +1,492 @@
+INFO: Compiling and running code "bm02_gameof1d" with gcc-12
+rm -f gameof1d.o timestep.o output.o initalive.o
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -c -o gameof1d.o gameof1d.cpp
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -c -o initalive.o initalive.cpp
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -c -o timestep.o timestep.cpp
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -c -o output.o output.cpp
+g++ -O3 -flto  -o gameof1d gameof1d.o initalive.o timestep.o output.o 
+296.14 s elapsed
+INFO: Compiling and running code "bm02_gameof1d" with gcc-13
+rm -f gameof1d.o timestep.o output.o initalive.o
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o gameof1d.o gameof1d.cpp
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o initalive.o initalive.cpp
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o timestep.o timestep.cpp
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o output.o output.cpp
+g++ -O3 -flto  -o gameof1d gameof1d.o initalive.o timestep.o output.o 
+296.11 s elapsed
+INFO: Compiling and running code "bm02_gameof1d" with gcc-14
+rm -f gameof1d.o timestep.o output.o initalive.o
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o gameof1d.o gameof1d.cpp
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o initalive.o initalive.cpp
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o timestep.o timestep.cpp
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o output.o output.cpp
+g++ -O3 -flto  -o gameof1d gameof1d.o initalive.o timestep.o output.o 
+296.59 s elapsed
+INFO: Compiling and running code "bm02_gameof1d" with gcc-15
+rm -f gameof1d.o timestep.o output.o initalive.o
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function  -c -o gameof1d.o gameof1d.cpp
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function  -c -o initalive.o initalive.cpp
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function  -c -o timestep.o timestep.cpp
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function  -c -o output.o output.cpp
+g++ -O3 -flto  -o gameof1d gameof1d.o initalive.o timestep.o output.o 
+296.20 s elapsed
+INFO: Compiling and running code "bm02_gameof1d" with intel-23
+rm -f gameof1d.o timestep.o output.o initalive.o
+icpx  -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wno-unused-function -Wfatal-errors -c -o gameof1d.o gameof1d.cpp
+icpx  -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wno-unused-function -Wfatal-errors -c -o initalive.o initalive.cpp
+icpx  -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wno-unused-function -Wfatal-errors -c -o timestep.o timestep.cpp
+icpx  -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wno-unused-function -Wfatal-errors -c -o output.o output.cpp
+icpx -O3  -o gameof1d gameof1d.o initalive.o timestep.o output.o 
+287.75 s elapsed
+INFO: Compiling and running code "bm02_gameof1d" with intel-24
+rm -f gameof1d.o timestep.o output.o initalive.o
+icpx  -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-nan-infinity-disabled -c -o gameof1d.o gameof1d.cpp
+icpx  -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-nan-infinity-disabled -c -o initalive.o initalive.cpp
+icpx  -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-nan-infinity-disabled -c -o timestep.o timestep.cpp
+icpx  -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-nan-infinity-disabled -c -o output.o output.cpp
+icpx -O3  -o gameof1d gameof1d.o initalive.o timestep.o output.o 
+289.30 s elapsed
+INFO: Compiling and running code "bm02_gameof1d" with aocc-5
+rm -f gameof1d.o timestep.o output.o initalive.o
+clang++  -std=c++17 -Ofast -ffast-math -march=native -flto -funroll-loops -Wall -Wfatal-errors -Wno-unused-function  -c -o gameof1d.o gameof1d.cpp
+clang++  -std=c++17 -Ofast -ffast-math -march=native -flto -funroll-loops -Wall -Wfatal-errors -Wno-unused-function  -c -o initalive.o initalive.cpp
+clang++  -std=c++17 -Ofast -ffast-math -march=native -flto -funroll-loops -Wall -Wfatal-errors -Wno-unused-function  -c -o timestep.o timestep.cpp
+clang++  -std=c++17 -Ofast -ffast-math -march=native -flto -funroll-loops -Wall -Wfatal-errors -Wno-unused-function  -c -o output.o output.cpp
+clang++ -O3  -o gameof1d gameof1d.o initalive.o timestep.o output.o 
+286.59 s elapsed
+INFO: Compiling and running code "bm02_gameof1d" with clang-18
+/scratch/rzon/tcb2/more-for-clang-18 /scratch/rzon/tcb2/bm02_gameof1d
+/scratch/rzon/tcb2/bm02_gameof1d
+rm -f gameof1d.o timestep.o output.o initalive.o
+clang++  -std=c++17 -Ofast -march=znver4 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o gameof1d.o gameof1d.cpp
+clang++  -std=c++17 -Ofast -march=znver4 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o initalive.o initalive.cpp
+clang++  -std=c++17 -Ofast -march=znver4 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o timestep.o timestep.cpp
+clang++  -std=c++17 -Ofast -march=znver4 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o output.o output.cpp
+clang++ -O3  -o gameof1d gameof1d.o initalive.o timestep.o output.o 
+288.38 s elapsed
+INFO: Compiling and running code "bm02_gameof1d" with llvm-20
+/scratch/rzon/tcb2/more-for-llvm-20 /scratch/rzon/tcb2/bm02_gameof1d
+/scratch/rzon/tcb2/bm02_gameof1d
+rm -f gameof1d.o timestep.o output.o initalive.o
+clang++  -std=c++17 -O3 -ffast-math -march=znver5 -funroll-loops -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o gameof1d.o gameof1d.cpp
+clang++  -std=c++17 -O3 -ffast-math -march=znver5 -funroll-loops -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o initalive.o initalive.cpp
+clang++  -std=c++17 -O3 -ffast-math -march=znver5 -funroll-loops -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o timestep.o timestep.cpp
+clang++  -std=c++17 -O3 -ffast-math -march=znver5 -funroll-loops -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o output.o output.cpp
+clang++ -O3 -march=znver5  -o gameof1d gameof1d.o initalive.o timestep.o output.o 
+287.11 s elapsed
+INFO: Compiling and running code "bm03_hydrogen" with gcc-12
+rm -f hydrogen.o eigenval.o output.o init.o output_c2.o init_c2.o eigenval_c2.o data.bin data.txt output_c2 init_c2 eigenval_c2 hydrogen.out testoutputarr.txt testoutputarr.bin
+g++ -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function   -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/gcc12/catch2/3.8.1/include  -c -o hydrogen.o hydrogen.cpp
+g++ -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function   -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/gcc12/catch2/3.8.1/include  -c -o eigenval.o eigenval.cpp
+g++ -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function   -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/gcc12/catch2/3.8.1/include  -c -o output.o output.cpp
+g++ -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function   -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/gcc12/catch2/3.8.1/include  -c -o init.o init.cpp
+g++ -O3 -flto   -L/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/gcc12/catch2/3.8.1/lib -o hydrogen hydrogen.o eigenval.o output.o init.o   -lCatch2Main -lCatch2
+355.20 s elapsed
+INFO: Compiling and running code "bm03_hydrogen" with gcc-13
+rm -f hydrogen.o eigenval.o output.o init.o output_c2.o init_c2.o eigenval_c2.o data.bin data.txt output_c2 init_c2 eigenval_c2 hydrogen.out testoutputarr.txt testoutputarr.bin
+g++ -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function   -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/gcc13/catch2/3.8.1/include  -c -o hydrogen.o hydrogen.cpp
+g++ -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function   -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/gcc13/catch2/3.8.1/include  -c -o eigenval.o eigenval.cpp
+g++ -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function   -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/gcc13/catch2/3.8.1/include  -c -o output.o output.cpp
+g++ -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function   -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/gcc13/catch2/3.8.1/include  -c -o init.o init.cpp
+g++ -O3 -flto   -L/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/gcc13/catch2/3.8.1/lib -o hydrogen hydrogen.o eigenval.o output.o init.o   -lCatch2Main -lCatch2
+355.13 s elapsed
+INFO: Compiling and running code "bm03_hydrogen" with gcc-14
+rm -f hydrogen.o eigenval.o output.o init.o output_c2.o init_c2.o eigenval_c2.o data.bin data.txt output_c2 init_c2 eigenval_c2 hydrogen.out testoutputarr.txt testoutputarr.bin
+g++ -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function   -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/gcccore/catch2/3.8.1/include  -c -o hydrogen.o hydrogen.cpp
+g++ -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function   -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/gcccore/catch2/3.8.1/include  -c -o eigenval.o eigenval.cpp
+g++ -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function   -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/gcccore/catch2/3.8.1/include  -c -o output.o output.cpp
+g++ -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function   -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/gcccore/catch2/3.8.1/include  -c -o init.o init.cpp
+g++ -O3 -flto   -L/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/gcccore/catch2/3.8.1/lib -o hydrogen hydrogen.o eigenval.o output.o init.o   -lCatch2Main -lCatch2
+209.78 s elapsed
+INFO: Compiling and running code "bm03_hydrogen" with gcc-15
+rm -f hydrogen.o eigenval.o output.o init.o output_c2.o init_c2.o eigenval_c2.o data.bin data.txt output_c2 init_c2 eigenval_c2 hydrogen.out testoutputarr.txt testoutputarr.bin
+g++ -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function    -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/gcc15/catch2/3.8.1/include  -c -o hydrogen.o hydrogen.cpp
+g++ -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function    -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/gcc15/catch2/3.8.1/include  -c -o eigenval.o eigenval.cpp
+g++ -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function    -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/gcc15/catch2/3.8.1/include  -c -o output.o output.cpp
+g++ -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function    -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/gcc15/catch2/3.8.1/include  -c -o init.o init.cpp
+g++ -O3 -flto   -L/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/gcc15/catch2/3.8.1/lib -o hydrogen hydrogen.o eigenval.o output.o init.o   -lCatch2Main -lCatch2
+207.41 s elapsed
+INFO: Compiling and running code "bm03_hydrogen" with intel-23
+rm -f hydrogen.o eigenval.o output.o init.o output_c2.o init_c2.o eigenval_c2.o data.bin data.txt output_c2 init_c2 eigenval_c2 hydrogen.out testoutputarr.txt testoutputarr.bin
+icpx -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wno-unused-function -Wfatal-errors   -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/intel2023/catch2/3.8.1/include  -c -o hydrogen.o hydrogen.cpp
+icpx -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wno-unused-function -Wfatal-errors   -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/intel2023/catch2/3.8.1/include  -c -o eigenval.o eigenval.cpp
+icpx -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wno-unused-function -Wfatal-errors   -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/intel2023/catch2/3.8.1/include  -c -o output.o output.cpp
+icpx -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wno-unused-function -Wfatal-errors   -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/intel2023/catch2/3.8.1/include  -c -o init.o init.cpp
+icpx -O3   -L/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/intel2023/catch2/3.8.1/lib -o hydrogen hydrogen.o eigenval.o output.o init.o   -lCatch2Main -lCatch2
+127.46 s elapsed
+INFO: Compiling and running code "bm03_hydrogen" with intel-24
+rm -f hydrogen.o eigenval.o output.o init.o output_c2.o init_c2.o eigenval_c2.o data.bin data.txt output_c2 init_c2 eigenval_c2 hydrogen.out testoutputarr.txt testoutputarr.bin
+icpx -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-nan-infinity-disabled   -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/intel2024/catch2/3.8.1/include  -c -o hydrogen.o hydrogen.cpp
+icpx -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-nan-infinity-disabled   -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/intel2024/catch2/3.8.1/include  -c -o eigenval.o eigenval.cpp
+icpx -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-nan-infinity-disabled   -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/intel2024/catch2/3.8.1/include  -c -o output.o output.cpp
+icpx -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-nan-infinity-disabled   -I/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/intel2024/catch2/3.8.1/include  -c -o init.o init.cpp
+icpx -O3   -L/home/rzon/.local/easybuild/software/2023/x86-64-v4/Compiler/intel2024/catch2/3.8.1/lib -o hydrogen hydrogen.o eigenval.o output.o init.o   -lCatch2Main -lCatch2
+127.96 s elapsed
+INFO: Compiling and running code "bm03_hydrogen" with aocc-5
+rm -f hydrogen.o eigenval.o output.o init.o output_c2.o init_c2.o eigenval_c2.o data.bin data.txt output_c2 init_c2 eigenval_c2 hydrogen.out testoutputarr.txt testoutputarr.bin
+clang++ -std=c++17 -Ofast -ffast-math -march=native -flto -funroll-loops -Wall -Wfatal-errors -Wno-unused-function    -I/opt/software/easybuild0/software/Catch2/3.8.1-GCCcore-14.2.0/include  -c -o hydrogen.o hydrogen.cpp
+clang++ -std=c++17 -Ofast -ffast-math -march=native -flto -funroll-loops -Wall -Wfatal-errors -Wno-unused-function    -I/opt/software/easybuild0/software/Catch2/3.8.1-GCCcore-14.2.0/include  -c -o eigenval.o eigenval.cpp
+clang++ -std=c++17 -Ofast -ffast-math -march=native -flto -funroll-loops -Wall -Wfatal-errors -Wno-unused-function    -I/opt/software/easybuild0/software/Catch2/3.8.1-GCCcore-14.2.0/include  -c -o output.o output.cpp
+clang++ -std=c++17 -Ofast -ffast-math -march=native -flto -funroll-loops -Wall -Wfatal-errors -Wno-unused-function    -I/opt/software/easybuild0/software/Catch2/3.8.1-GCCcore-14.2.0/include  -c -o init.o init.cpp
+clang++ -O3   -L/opt/software/easybuild0/software/Catch2/3.8.1-GCCcore-14.2.0/lib -o hydrogen hydrogen.o eigenval.o output.o init.o   -lCatch2Main -lCatch2
+95.88 s elapsed
+INFO: Compiling and running code "bm03_hydrogen" with clang-18
+/scratch/rzon/tcb2/more-for-clang-18 /scratch/rzon/tcb2/bm03_hydrogen
+/scratch/rzon/tcb2/bm03_hydrogen
+rm -f hydrogen.o eigenval.o output.o init.o output_c2.o init_c2.o eigenval_c2.o data.bin data.txt output_c2 init_c2 eigenval_c2 hydrogen.out testoutputarr.txt testoutputarr.bin
+clang++ -std=c++17 -Ofast -march=znver4 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled   -I/scratch/rzon/tcb2/more-for-clang-18/include  -c -o hydrogen.o hydrogen.cpp
+clang++ -std=c++17 -Ofast -march=znver4 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled   -I/scratch/rzon/tcb2/more-for-clang-18/include  -c -o eigenval.o eigenval.cpp
+clang++ -std=c++17 -Ofast -march=znver4 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled   -I/scratch/rzon/tcb2/more-for-clang-18/include  -c -o output.o output.cpp
+clang++ -std=c++17 -Ofast -march=znver4 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled   -I/scratch/rzon/tcb2/more-for-clang-18/include  -c -o init.o init.cpp
+clang++ -O3   -L/scratch/rzon/tcb2/more-for-clang-18/lib64 -o hydrogen hydrogen.o eigenval.o output.o init.o   -lCatch2Main -lCatch2
+97.52 s elapsed
+INFO: Compiling and running code "bm03_hydrogen" with llvm-20
+/scratch/rzon/tcb2/more-for-llvm-20 /scratch/rzon/tcb2/bm03_hydrogen
+/scratch/rzon/tcb2/bm03_hydrogen
+rm -f hydrogen.o eigenval.o output.o init.o output_c2.o init_c2.o eigenval_c2.o data.bin data.txt output_c2 init_c2 eigenval_c2 hydrogen.out testoutputarr.txt testoutputarr.bin
+clang++ -std=c++17 -O3 -ffast-math -march=znver5 -funroll-loops -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled   -I/scratch/rzon/tcb2/more-for-llvm-20/include  -c -o hydrogen.o hydrogen.cpp
+clang++ -std=c++17 -O3 -ffast-math -march=znver5 -funroll-loops -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled   -I/scratch/rzon/tcb2/more-for-llvm-20/include  -c -o eigenval.o eigenval.cpp
+clang++ -std=c++17 -O3 -ffast-math -march=znver5 -funroll-loops -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled   -I/scratch/rzon/tcb2/more-for-llvm-20/include  -c -o output.o output.cpp
+clang++ -std=c++17 -O3 -ffast-math -march=znver5 -funroll-loops -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled   -I/scratch/rzon/tcb2/more-for-llvm-20/include  -c -o init.o init.cpp
+clang++ -O3 -march=znver5   -L/scratch/rzon/tcb2/more-for-llvm-20/lib64 -o hydrogen hydrogen.o eigenval.o output.o init.o   -lCatch2Main -lCatch2
+97.68 s elapsed
+INFO: Compiling and running code "bm05_pkkfisher" with gcc-12
+rm -f output.o readcommandline.o answer1.o answer2.o answer3.o 
+g++    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -c -o answer1.o answer1.cpp
+g++    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -c -o output.o output.cpp
+g++    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -c -o readcommandline.o readcommandline.cpp
+g++    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -c -o answer2.o answer2.cpp
+g++    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -c -o answer3.o answer3.cpp
+g++ -O3 -flto    -o answer1 answer1.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+g++ -O3 -flto    -o answer2 answer2.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+g++ -O3 -flto    -o answer3 answer3.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+1812.24 s elapsed
+152.87 s elapsed
+4.67 s elapsed
+INFO: Compiling and running code "bm05_pkkfisher" with gcc-13
+rm -f output.o readcommandline.o answer1.o answer2.o answer3.o 
+g++    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o answer1.o answer1.cpp
+g++    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o output.o output.cpp
+g++    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o readcommandline.o readcommandline.cpp
+g++    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o answer2.o answer2.cpp
+g++    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o answer3.o answer3.cpp
+g++ -O3 -flto    -o answer1 answer1.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+g++ -O3 -flto    -o answer2 answer2.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+g++ -O3 -flto    -o answer3 answer3.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+1812.38 s elapsed
+152.91 s elapsed
+4.71 s elapsed
+INFO: Compiling and running code "bm05_pkkfisher" with gcc-14
+rm -f output.o readcommandline.o answer1.o answer2.o answer3.o 
+g++    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o answer1.o answer1.cpp
+g++    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o output.o output.cpp
+g++    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o readcommandline.o readcommandline.cpp
+g++    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o answer2.o answer2.cpp
+g++    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o answer3.o answer3.cpp
+g++ -O3 -flto    -o answer1 answer1.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+g++ -O3 -flto    -o answer2 answer2.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+g++ -O3 -flto    -o answer3 answer3.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+913.69 s elapsed
+153.04 s elapsed
+3.64 s elapsed
+INFO: Compiling and running code "bm05_pkkfisher" with gcc-15
+rm -f output.o readcommandline.o answer1.o answer2.o answer3.o 
+g++    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function  -c -o answer1.o answer1.cpp
+g++    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function  -c -o output.o output.cpp
+g++    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function  -c -o readcommandline.o readcommandline.cpp
+g++    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function  -c -o answer2.o answer2.cpp
+g++    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function  -c -o answer3.o answer3.cpp
+g++ -O3 -flto    -o answer1 answer1.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+g++ -O3 -flto    -o answer2 answer2.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+g++ -O3 -flto    -o answer3 answer3.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+915.50 s elapsed
+151.60 s elapsed
+3.72 s elapsed
+INFO: Compiling and running code "bm05_pkkfisher" with intel-23
+rm -f output.o readcommandline.o answer1.o answer2.o answer3.o 
+icpx    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/intel2023/aocl-blas/5.1/include/blis64 -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wno-unused-function -Wfatal-errors -c -o answer1.o answer1.cpp
+icpx    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/intel2023/aocl-blas/5.1/include/blis64 -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wno-unused-function -Wfatal-errors -c -o output.o output.cpp
+icpx    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/intel2023/aocl-blas/5.1/include/blis64 -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wno-unused-function -Wfatal-errors -c -o readcommandline.o readcommandline.cpp
+icpx    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/intel2023/aocl-blas/5.1/include/blis64 -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wno-unused-function -Wfatal-errors -c -o answer2.o answer2.cpp
+icpx    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/intel2023/aocl-blas/5.1/include/blis64 -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wno-unused-function -Wfatal-errors -c -o answer3.o answer3.cpp
+icpx -O3    -o answer1 answer1.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+icpx -O3    -o answer2 answer2.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+icpx -O3    -o answer3 answer3.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+372.63 s elapsed
+153.32 s elapsed
+6.33 s elapsed
+INFO: Compiling and running code "bm05_pkkfisher" with intel-24
+rm -f output.o readcommandline.o answer1.o answer2.o answer3.o 
+icpx    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/intel2024/aocl-blas/5.1/include/blis64 -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-nan-infinity-disabled -c -o answer1.o answer1.cpp
+icpx    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/intel2024/aocl-blas/5.1/include/blis64 -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-nan-infinity-disabled -c -o output.o output.cpp
+icpx    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/intel2024/aocl-blas/5.1/include/blis64 -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-nan-infinity-disabled -c -o readcommandline.o readcommandline.cpp
+icpx    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/intel2024/aocl-blas/5.1/include/blis64 -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-nan-infinity-disabled -c -o answer2.o answer2.cpp
+icpx    -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/intel2024/aocl-blas/5.1/include/blis64 -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-nan-infinity-disabled -c -o answer3.o answer3.cpp
+icpx -O3    -o answer1 answer1.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+icpx -O3    -o answer2 answer2.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+icpx -O3    -o answer3 answer3.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+373.16 s elapsed
+155.75 s elapsed
+6.19 s elapsed
+INFO: Compiling and running code "bm05_pkkfisher" with aocc-5
+rm -f output.o readcommandline.o answer1.o answer2.o answer3.o 
+clang++    -I/opt/software/easybuild0/software/AOCL-BLAS/5.0-GCC-14.2.0/include/blis -std=c++17 -Ofast -ffast-math -march=native -flto -funroll-loops -Wall -Wfatal-errors -Wno-unused-function  -c -o answer1.o answer1.cpp
+clang++    -I/opt/software/easybuild0/software/AOCL-BLAS/5.0-GCC-14.2.0/include/blis -std=c++17 -Ofast -ffast-math -march=native -flto -funroll-loops -Wall -Wfatal-errors -Wno-unused-function  -c -o output.o output.cpp
+clang++    -I/opt/software/easybuild0/software/AOCL-BLAS/5.0-GCC-14.2.0/include/blis -std=c++17 -Ofast -ffast-math -march=native -flto -funroll-loops -Wall -Wfatal-errors -Wno-unused-function  -c -o readcommandline.o readcommandline.cpp
+clang++    -I/opt/software/easybuild0/software/AOCL-BLAS/5.0-GCC-14.2.0/include/blis -std=c++17 -Ofast -ffast-math -march=native -flto -funroll-loops -Wall -Wfatal-errors -Wno-unused-function  -c -o answer2.o answer2.cpp
+clang++    -I/opt/software/easybuild0/software/AOCL-BLAS/5.0-GCC-14.2.0/include/blis -std=c++17 -Ofast -ffast-math -march=native -flto -funroll-loops -Wall -Wfatal-errors -Wno-unused-function  -c -o answer3.o answer3.cpp
+clang++ -O3    -L/opt/software/easybuild0/software/AOCL-BLAS/5.0-GCC-14.2.0/lib -o answer1 answer1.o output.o readcommandline.o   -lboost_program_options  -lblis-mt
+clang++ -O3    -L/opt/software/easybuild0/software/AOCL-BLAS/5.0-GCC-14.2.0/lib -o answer2 answer2.o output.o readcommandline.o   -lboost_program_options  -lblis-mt
+clang++ -O3    -L/opt/software/easybuild0/software/AOCL-BLAS/5.0-GCC-14.2.0/lib -o answer3 answer3.o output.o readcommandline.o   -lboost_program_options  -lblis-mt
+144.67 s elapsed
+157.14 s elapsed
+3.68 s elapsed
+INFO: Compiling and running code "bm05_pkkfisher" with clang-18
+/scratch/rzon/tcb2/more-for-clang-18 /scratch/rzon/tcb2/bm05_pkkfisher
+/scratch/rzon/tcb2/bm05_pkkfisher
+rm -f output.o readcommandline.o answer1.o answer2.o answer3.o 
+clang++   -I/scratch/rzon/tcb2/more-for-clang-18/include  -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=znver4 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o answer1.o answer1.cpp
+clang++   -I/scratch/rzon/tcb2/more-for-clang-18/include  -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=znver4 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o output.o output.cpp
+clang++   -I/scratch/rzon/tcb2/more-for-clang-18/include  -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=znver4 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o readcommandline.o readcommandline.cpp
+clang++   -I/scratch/rzon/tcb2/more-for-clang-18/include  -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=znver4 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o answer2.o answer2.cpp
+clang++   -I/scratch/rzon/tcb2/more-for-clang-18/include  -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -Ofast -march=znver4 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o answer3.o answer3.cpp
+clang++ -O3   -L/scratch/rzon/tcb2/more-for-clang-18/lib  -o answer1 answer1.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+clang++ -O3   -L/scratch/rzon/tcb2/more-for-clang-18/lib  -o answer2 answer2.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+clang++ -O3   -L/scratch/rzon/tcb2/more-for-clang-18/lib  -o answer3 answer3.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+162.10 s elapsed
+152.60 s elapsed
+3.85 s elapsed
+INFO: Compiling and running code "bm05_pkkfisher" with llvm-20
+/scratch/rzon/tcb2/more-for-llvm-20 /scratch/rzon/tcb2/bm05_pkkfisher
+/scratch/rzon/tcb2/bm05_pkkfisher
+rm -f output.o readcommandline.o answer1.o answer2.o answer3.o 
+clang++   -I/scratch/rzon/tcb2/more-for-llvm-20/include  -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -O3 -ffast-math -march=znver5 -funroll-loops -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o answer1.o answer1.cpp
+clang++   -I/scratch/rzon/tcb2/more-for-llvm-20/include  -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -O3 -ffast-math -march=znver5 -funroll-loops -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o output.o output.cpp
+clang++   -I/scratch/rzon/tcb2/more-for-llvm-20/include  -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -O3 -ffast-math -march=znver5 -funroll-loops -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o readcommandline.o readcommandline.cpp
+clang++   -I/scratch/rzon/tcb2/more-for-llvm-20/include  -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -O3 -ffast-math -march=znver5 -funroll-loops -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o answer2.o answer2.cpp
+clang++   -I/scratch/rzon/tcb2/more-for-llvm-20/include  -I/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/include/blis64 -std=c++17 -O3 -ffast-math -march=znver5 -funroll-loops -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o answer3.o answer3.cpp
+clang++ -O3 -march=znver5   -L/scratch/rzon/tcb2/more-for-llvm-20/lib  -L/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/lib64 -o answer1 answer1.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+clang++ -O3 -march=znver5   -L/scratch/rzon/tcb2/more-for-llvm-20/lib  -L/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/lib64 -o answer2 answer2.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+clang++ -O3 -march=znver5   -L/scratch/rzon/tcb2/more-for-llvm-20/lib  -L/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Core/aocl-blascore/5.1/lib64 -o answer3 answer3.o output.o readcommandline.o   -lboost_program_options  -lblis-mt64
+145.14 s elapsed
+152.99 s elapsed
+3.85 s elapsed
+INFO: Compiling and running code "bm06_pdefft" with gcc-12
+rm -f output.o readcommandline.o a6pdefft.o
+g++    -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -c -o a6pdefft.o a6pdefft.cpp
+g++    -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -c -o output.o output.cpp
+g++    -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -c -o readcommandline.o readcommandline.cpp
+g++ -O3 -flto    -o a6pdefft a6pdefft.o output.o readcommandline.o   -lboost_program_options  -lfftw3
+128.65 s elapsed
+INFO: Compiling and running code "bm06_pdefft" with gcc-13
+rm -f output.o readcommandline.o a6pdefft.o
+g++    -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o a6pdefft.o a6pdefft.cpp
+g++    -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o output.o output.cpp
+g++    -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o readcommandline.o readcommandline.cpp
+g++ -O3 -flto    -o a6pdefft a6pdefft.o output.o readcommandline.o   -lboost_program_options  -lfftw3
+133.35 s elapsed
+INFO: Compiling and running code "bm06_pdefft" with gcc-14
+rm -f output.o readcommandline.o a6pdefft.o
+g++    -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o a6pdefft.o a6pdefft.cpp
+g++    -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o output.o output.cpp
+g++    -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o readcommandline.o readcommandline.cpp
+g++ -O3 -flto    -o a6pdefft a6pdefft.o output.o readcommandline.o   -lboost_program_options  -lfftw3
+130.23 s elapsed
+INFO: Compiling and running code "bm06_pdefft" with gcc-15
+rm -f output.o readcommandline.o a6pdefft.o
+g++    -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function  -c -o a6pdefft.o a6pdefft.cpp
+g++    -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function  -c -o output.o output.cpp
+g++    -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function  -c -o readcommandline.o readcommandline.cpp
+g++ -O3 -flto    -o a6pdefft a6pdefft.o output.o readcommandline.o   -lboost_program_options  -lfftw3
+141.08 s elapsed
+INFO: Compiling and running code "bm06_pdefft" with intel-23
+rm -f output.o readcommandline.o a6pdefft.o
+icpx    -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wno-unused-function -Wfatal-errors -c -o a6pdefft.o a6pdefft.cpp
+icpx    -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wno-unused-function -Wfatal-errors -c -o output.o output.cpp
+icpx    -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wno-unused-function -Wfatal-errors -c -o readcommandline.o readcommandline.cpp
+icpx -O3    -o a6pdefft a6pdefft.o output.o readcommandline.o   -lboost_program_options  -lfftw3
+154.77 s elapsed
+INFO: Compiling and running code "bm06_pdefft" with intel-24
+rm -f output.o readcommandline.o a6pdefft.o
+icpx    -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-nan-infinity-disabled -c -o a6pdefft.o a6pdefft.cpp
+icpx    -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-nan-infinity-disabled -c -o output.o output.cpp
+icpx    -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-nan-infinity-disabled -c -o readcommandline.o readcommandline.cpp
+icpx -O3    -o a6pdefft a6pdefft.o output.o readcommandline.o   -lboost_program_options  -lfftw3
+152.73 s elapsed
+INFO: Compiling and running code "bm06_pdefft" with aocc-5
+rm -f output.o readcommandline.o a6pdefft.o
+clang++    -std=c++17 -Ofast -ffast-math -march=native -flto -funroll-loops -Wall -Wfatal-errors -Wno-unused-function  -c -o a6pdefft.o a6pdefft.cpp
+clang++    -std=c++17 -Ofast -ffast-math -march=native -flto -funroll-loops -Wall -Wfatal-errors -Wno-unused-function  -c -o output.o output.cpp
+clang++    -std=c++17 -Ofast -ffast-math -march=native -flto -funroll-loops -Wall -Wfatal-errors -Wno-unused-function  -c -o readcommandline.o readcommandline.cpp
+clang++ -O3    -o a6pdefft a6pdefft.o output.o readcommandline.o   -lboost_program_options  -lfftw3
+183.88 s elapsed
+INFO: Compiling and running code "bm06_pdefft" with clang-18
+/scratch/rzon/tcb2/more-for-clang-18 /scratch/rzon/tcb2/bm06_pdefft
+/scratch/rzon/tcb2/bm06_pdefft
+rm -f output.o readcommandline.o a6pdefft.o
+clang++   -I/scratch/rzon/tcb2/more-for-clang-18/include  -std=c++17 -Ofast -march=znver4 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o a6pdefft.o a6pdefft.cpp
+clang++   -I/scratch/rzon/tcb2/more-for-clang-18/include  -std=c++17 -Ofast -march=znver4 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o output.o output.cpp
+clang++   -I/scratch/rzon/tcb2/more-for-clang-18/include  -std=c++17 -Ofast -march=znver4 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o readcommandline.o readcommandline.cpp
+clang++ -O3   -L/scratch/rzon/tcb2/more-for-clang-18/lib  -o a6pdefft a6pdefft.o output.o readcommandline.o   -lboost_program_options  -lfftw3
+182.42 s elapsed
+INFO: Compiling and running code "bm06_pdefft" with llvm-20
+/scratch/rzon/tcb2/more-for-llvm-20 /scratch/rzon/tcb2/bm06_pdefft
+/scratch/rzon/tcb2/bm06_pdefft
+rm -f output.o readcommandline.o a6pdefft.o
+clang++   -I/scratch/rzon/tcb2/more-for-llvm-20/include  -std=c++17 -O3 -ffast-math -march=znver5 -funroll-loops -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o a6pdefft.o a6pdefft.cpp
+clang++   -I/scratch/rzon/tcb2/more-for-llvm-20/include  -std=c++17 -O3 -ffast-math -march=znver5 -funroll-loops -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o output.o output.cpp
+clang++   -I/scratch/rzon/tcb2/more-for-llvm-20/include  -std=c++17 -O3 -ffast-math -march=znver5 -funroll-loops -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o readcommandline.o readcommandline.cpp
+clang++ -O3 -march=znver5   -L/scratch/rzon/tcb2/more-for-llvm-20/lib  -o a6pdefft a6pdefft.o output.o readcommandline.o   -lboost_program_options  -lfftw3
+181.22 s elapsed
+INFO: Compiling and running code "bm07_percolation" with gcc-12
+rm -f readcommandline.o percolation.o onewalker.o medium.o 
+g++   -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -c -o percolation.o percolation.cpp
+g++   -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -c -o readcommandline.o readcommandline.cpp
+g++   -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -c -o medium.o medium.cpp
+g++   -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -c -o onewalker.o onewalker.cpp
+g++ -O3 -flto   -o percolation percolation.o readcommandline.o medium.o onewalker.o   -lboost_program_options
+132.95 s elapsed
+INFO: Compiling and running code "bm07_percolation" with gcc-13
+rm -f readcommandline.o percolation.o onewalker.o medium.o 
+g++   -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o percolation.o percolation.cpp
+g++   -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o readcommandline.o readcommandline.cpp
+g++   -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o medium.o medium.cpp
+g++   -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o onewalker.o onewalker.cpp
+g++ -O3 -flto   -o percolation percolation.o readcommandline.o medium.o onewalker.o   -lboost_program_options
+133.87 s elapsed
+INFO: Compiling and running code "bm07_percolation" with gcc-14
+rm -f readcommandline.o percolation.o onewalker.o medium.o 
+g++   -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o percolation.o percolation.cpp
+g++   -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o readcommandline.o readcommandline.cpp
+g++   -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o medium.o medium.cpp
+g++   -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o onewalker.o onewalker.cpp
+g++ -O3 -flto   -o percolation percolation.o readcommandline.o medium.o onewalker.o   -lboost_program_options
+126.83 s elapsed
+INFO: Compiling and running code "bm07_percolation" with gcc-15
+rm -f readcommandline.o percolation.o onewalker.o medium.o 
+g++   -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function  -c -o percolation.o percolation.cpp
+g++   -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function  -c -o readcommandline.o readcommandline.cpp
+g++   -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function  -c -o medium.o medium.cpp
+g++   -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function  -c -o onewalker.o onewalker.cpp
+g++ -O3 -flto   -o percolation percolation.o readcommandline.o medium.o onewalker.o   -lboost_program_options
+125.64 s elapsed
+INFO: Compiling and running code "bm07_percolation" with intel-23
+rm -f readcommandline.o percolation.o onewalker.o medium.o 
+icpx   -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wno-unused-function -Wfatal-errors -c -o percolation.o percolation.cpp
+icpx   -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wno-unused-function -Wfatal-errors -c -o readcommandline.o readcommandline.cpp
+icpx   -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wno-unused-function -Wfatal-errors -c -o medium.o medium.cpp
+icpx   -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wno-unused-function -Wfatal-errors -c -o onewalker.o onewalker.cpp
+icpx -O3   -o percolation percolation.o readcommandline.o medium.o onewalker.o   -lboost_program_options
+160.50 s elapsed
+INFO: Compiling and running code "bm07_percolation" with intel-24
+rm -f readcommandline.o percolation.o onewalker.o medium.o 
+icpx   -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-nan-infinity-disabled -c -o percolation.o percolation.cpp
+icpx   -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-nan-infinity-disabled -c -o readcommandline.o readcommandline.cpp
+icpx   -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-nan-infinity-disabled -c -o medium.o medium.cpp
+icpx   -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-nan-infinity-disabled -c -o onewalker.o onewalker.cpp
+icpx -O3   -o percolation percolation.o readcommandline.o medium.o onewalker.o   -lboost_program_options
+161.39 s elapsed
+INFO: Compiling and running code "bm07_percolation" with aocc-5
+rm -f readcommandline.o percolation.o onewalker.o medium.o 
+clang++   -std=c++17 -Ofast -ffast-math -march=native -flto -funroll-loops -Wall -Wfatal-errors -Wno-unused-function  -c -o percolation.o percolation.cpp
+clang++   -std=c++17 -Ofast -ffast-math -march=native -flto -funroll-loops -Wall -Wfatal-errors -Wno-unused-function  -c -o readcommandline.o readcommandline.cpp
+clang++   -std=c++17 -Ofast -ffast-math -march=native -flto -funroll-loops -Wall -Wfatal-errors -Wno-unused-function  -c -o medium.o medium.cpp
+clang++   -std=c++17 -Ofast -ffast-math -march=native -flto -funroll-loops -Wall -Wfatal-errors -Wno-unused-function  -c -o onewalker.o onewalker.cpp
+clang++ -O3   -o percolation percolation.o readcommandline.o medium.o onewalker.o   -lboost_program_options
+155.37 s elapsed
+INFO: Compiling and running code "bm07_percolation" with clang-18
+/scratch/rzon/tcb2/more-for-clang-18 /scratch/rzon/tcb2/bm07_percolation
+/scratch/rzon/tcb2/bm07_percolation
+rm -f readcommandline.o percolation.o onewalker.o medium.o 
+clang++   -I/scratch/rzon/tcb2/more-for-clang-18/include -std=c++17 -Ofast -march=znver4 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o percolation.o percolation.cpp
+clang++   -I/scratch/rzon/tcb2/more-for-clang-18/include -std=c++17 -Ofast -march=znver4 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o readcommandline.o readcommandline.cpp
+clang++   -I/scratch/rzon/tcb2/more-for-clang-18/include -std=c++17 -Ofast -march=znver4 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o medium.o medium.cpp
+clang++   -I/scratch/rzon/tcb2/more-for-clang-18/include -std=c++17 -Ofast -march=znver4 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o onewalker.o onewalker.cpp
+clang++ -O3   -L/scratch/rzon/tcb2/more-for-clang-18/lib -o percolation percolation.o readcommandline.o medium.o onewalker.o   -lboost_program_options
+161.09 s elapsed
+INFO: Compiling and running code "bm07_percolation" with llvm-20
+/scratch/rzon/tcb2/more-for-llvm-20 /scratch/rzon/tcb2/bm07_percolation
+/scratch/rzon/tcb2/bm07_percolation
+rm -f readcommandline.o percolation.o onewalker.o medium.o 
+clang++   -I/scratch/rzon/tcb2/more-for-llvm-20/include -std=c++17 -O3 -ffast-math -march=znver5 -funroll-loops -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o percolation.o percolation.cpp
+clang++   -I/scratch/rzon/tcb2/more-for-llvm-20/include -std=c++17 -O3 -ffast-math -march=znver5 -funroll-loops -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o readcommandline.o readcommandline.cpp
+clang++   -I/scratch/rzon/tcb2/more-for-llvm-20/include -std=c++17 -O3 -ffast-math -march=znver5 -funroll-loops -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o medium.o medium.cpp
+clang++   -I/scratch/rzon/tcb2/more-for-llvm-20/include -std=c++17 -O3 -ffast-math -march=znver5 -funroll-loops -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o onewalker.o onewalker.cpp
+clang++ -O3 -march=znver5   -L/scratch/rzon/tcb2/more-for-llvm-20/lib -o percolation percolation.o readcommandline.o medium.o onewalker.o   -lboost_program_options
+161.39 s elapsed
+INFO: Compiling and running code "bm08_openmphistogram" with gcc-12
+rm -f timestepdistribution.o timestepdistribution-omp.o
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -c -o timestepdistribution.o timestepdistribution.cpp
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -fopenmp -c -o timestepdistribution-omp.o timestepdistribution-omp.cpp
+g++ -O3 -flto  -o timestepdistribution timestepdistribution.o 
+g++ -O3 -flto  -fopenmp -o timestepdistribution-omp timestepdistribution-omp.o 
+17.06 s elapsed
+13.41 s elapsed
+INFO: Compiling and running code "bm08_openmphistogram" with gcc-13
+rm -f timestepdistribution.o timestepdistribution-omp.o
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o timestepdistribution.o timestepdistribution.cpp
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -fopenmp -c -o timestepdistribution-omp.o timestepdistribution-omp.cpp
+g++ -O3 -flto  -o timestepdistribution timestepdistribution.o 
+g++ -O3 -flto  -fopenmp -o timestepdistribution-omp timestepdistribution-omp.o 
+12.00 s elapsed
+12.83 s elapsed
+INFO: Compiling and running code "bm08_openmphistogram" with gcc-14
+rm -f timestepdistribution.o timestepdistribution-omp.o
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -c -o timestepdistribution.o timestepdistribution.cpp
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function -fopenmp -c -o timestepdistribution-omp.o timestepdistribution-omp.cpp
+g++ -O3 -flto  -o timestepdistribution timestepdistribution.o 
+g++ -O3 -flto  -fopenmp -o timestepdistribution-omp timestepdistribution-omp.o 
+11.93 s elapsed
+12.29 s elapsed
+INFO: Compiling and running code "bm08_openmphistogram" with gcc-15
+rm -f timestepdistribution.o timestepdistribution-omp.o
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function  -c -o timestepdistribution.o timestepdistribution.cpp
+g++  -std=c++17 -Ofast -march=native -flto -funroll-loops -ffast-math  -Wall -Wfatal-errors -Wno-unused-function  -fopenmp -c -o timestepdistribution-omp.o timestepdistribution-omp.cpp
+g++ -O3 -flto  -o timestepdistribution timestepdistribution.o 
+g++ -O3 -flto  -fopenmp -o timestepdistribution-omp timestepdistribution-omp.o 
+12.43 s elapsed
+12.64 s elapsed
+INFO: Compiling and running code "bm08_openmphistogram" with intel-23
+rm -f timestepdistribution.o timestepdistribution-omp.o
+icpx  -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wno-unused-function -Wfatal-errors -c -o timestepdistribution.o timestepdistribution.cpp
+icpx  -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wno-unused-function -Wfatal-errors -fopenmp -c -o timestepdistribution-omp.o timestepdistribution-omp.cpp
+icpx -O3  -o timestepdistribution timestepdistribution.o 
+icpx -O3  -fopenmp -o timestepdistribution-omp timestepdistribution-omp.o 
+11.85 s elapsed
+13.21 s elapsed
+INFO: Compiling and running code "bm08_openmphistogram" with intel-24
+rm -f timestepdistribution.o timestepdistribution-omp.o
+icpx  -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-nan-infinity-disabled -c -o timestepdistribution.o timestepdistribution.cpp
+icpx  -std=c++17 -Ofast -march=skylake-avx512 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-nan-infinity-disabled -qopenmp -c -o timestepdistribution-omp.o timestepdistribution-omp.cpp
+icpx -O3  -o timestepdistribution timestepdistribution.o 
+icpx -O3  -qopenmp -o timestepdistribution-omp timestepdistribution-omp.o 
+11.80 s elapsed
+12.52 s elapsed
+INFO: Compiling and running code "bm08_openmphistogram" with aocc-5
+rm -f timestepdistribution.o timestepdistribution-omp.o
+clang++  -std=c++17 -Ofast -ffast-math -march=native -flto -funroll-loops -Wall -Wfatal-errors -Wno-unused-function  -c -o timestepdistribution.o timestepdistribution.cpp
+clang++  -std=c++17 -Ofast -ffast-math -march=native -flto -funroll-loops -Wall -Wfatal-errors -Wno-unused-function  -fopenmp -c -o timestepdistribution-omp.o timestepdistribution-omp.cpp
+clang++ -O3  -o timestepdistribution timestepdistribution.o 
+clang++ -O3  -fopenmp -o timestepdistribution-omp timestepdistribution-omp.o 
+11.76 s elapsed
+12.66 s elapsed
+INFO: Compiling and running code "bm08_openmphistogram" with clang-18
+/scratch/rzon/tcb2/more-for-clang-18 /scratch/rzon/tcb2/bm08_openmphistogram
+/scratch/rzon/tcb2/bm08_openmphistogram
+rm -f timestepdistribution.o timestepdistribution-omp.o
+clang++  -std=c++17 -Ofast -march=znver4 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o timestepdistribution.o timestepdistribution.cpp
+clang++  -std=c++17 -Ofast -march=znver4 -funroll-loops -ffast-math -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -fopenmp -c -o timestepdistribution-omp.o timestepdistribution-omp.cpp
+clang++ -O3  -o timestepdistribution timestepdistribution.o 
+clang++ -O3  -fopenmp -o timestepdistribution-omp timestepdistribution-omp.o 
+11.89 s elapsed
+12.62 s elapsed
+INFO: Compiling and running code "bm08_openmphistogram" with llvm-20
+/scratch/rzon/tcb2/more-for-llvm-20 /scratch/rzon/tcb2/bm08_openmphistogram
+/scratch/rzon/tcb2/bm08_openmphistogram
+rm -f timestepdistribution.o timestepdistribution-omp.o
+clang++  -std=c++17 -O3 -ffast-math -march=znver5 -funroll-loops -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -c -o timestepdistribution.o timestepdistribution.cpp
+clang++  -std=c++17 -O3 -ffast-math -march=znver5 -funroll-loops -Wall -Wfatal-errors -Wno-unused-function -Wno-nan-infinity-disabled -fopenmp -c -o timestepdistribution-omp.o timestepdistribution-omp.cpp
+clang++ -O3 -march=znver5  -o timestepdistribution timestepdistribution.o 
+clang++ -O3 -march=znver5  -fopenmp -o timestepdistribution-omp timestepdistribution-omp.o 
+11.96 s elapsed
+13.55 s elapsed

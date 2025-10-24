@@ -1,0 +1,55 @@
+
+gcc-12   	bm02_gameof1d	296.14   
+gcc-13   	bm02_gameof1d	296.11   
+gcc-14   	bm02_gameof1d	296.59   
+gcc-15   	bm02_gameof1d	296.20   
+intel-23   	bm02_gameof1d	287.75   
+intel-24   	bm02_gameof1d	289.30   
+aocc-5   	bm02_gameof1d	286.59   
+clang-18   	bm02_gameof1d	288.38   
+llvm-20   	bm02_gameof1d	287.11   
+gcc-12   	bm03_hydrogen	355.20   
+gcc-13   	bm03_hydrogen	355.13   
+gcc-14   	bm03_hydrogen	209.78   
+gcc-15   	bm03_hydrogen	207.41   
+intel-23   	bm03_hydrogen	127.46   
+intel-24   	bm03_hydrogen	127.96   
+aocc-5   	bm03_hydrogen	95.88   
+clang-18   	bm03_hydrogen	97.52   
+llvm-20   	bm03_hydrogen	97.68   
+gcc-12   	bm05_pkkfisher	1812.24   152.87   4.67   
+gcc-13   	bm05_pkkfisher	1812.38   152.91   4.71   
+gcc-14   	bm05_pkkfisher	913.69   153.04   3.64   
+gcc-15   	bm05_pkkfisher	915.50   151.60   3.72   
+intel-23   	bm05_pkkfisher	372.63   153.32   6.33   
+intel-24   	bm05_pkkfisher	373.16   155.75   6.19   
+aocc-5   	bm05_pkkfisher	144.67   157.14   3.68   
+clang-18   	bm05_pkkfisher	162.10   152.60   3.85   
+llvm-20   	bm05_pkkfisher	145.14   152.99   3.85   
+gcc-12   	bm06_pdefft	128.65   
+gcc-13   	bm06_pdefft	133.35   
+gcc-14   	bm06_pdefft	130.23   
+gcc-15   	bm06_pdefft	141.08   
+intel-23   	bm06_pdefft	154.77   
+intel-24   	bm06_pdefft	152.73   
+aocc-5   	bm06_pdefft	183.88   
+clang-18   	bm06_pdefft	182.42   
+llvm-20   	bm06_pdefft	181.22   
+gcc-12   	bm07_percolation	132.95   
+gcc-13   	bm07_percolation	133.87   
+gcc-14   	bm07_percolation	126.83   
+gcc-15   	bm07_percolation	125.64   
+intel-23   	bm07_percolation	160.50   
+intel-24   	bm07_percolation	161.39   
+aocc-5   	bm07_percolation	155.37   
+clang-18   	bm07_percolation	161.09   
+llvm-20   	bm07_percolation	161.39   
+gcc-12   	bm08_openmphistogram	17.06   13.41   
+gcc-13   	bm08_openmphistogram	12.00   12.83   
+gcc-14   	bm08_openmphistogram	11.93   12.29   
+gcc-15   	bm08_openmphistogram	12.43   12.64   
+intel-23   	bm08_openmphistogram	11.85   13.21   
+intel-24   	bm08_openmphistogram	11.80   12.52   
+aocc-5   	bm08_openmphistogram	11.76   12.66   
+clang-18   	bm08_openmphistogram	11.89   12.62   
+llvm-20   	bm08_openmphistogram	11.96   13.55   
