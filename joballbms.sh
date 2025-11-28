@@ -8,8 +8,14 @@
 
 set -euo pipefail
 
-COMPILERS=(gcc-12 gcc-13 gcc-14 gcc-15 intel-23 intel-24 aocc-5 clang-18 llvm-20)
-CODES=(bm02_gameof1d bm03_hydrogen bm05_pkkfisher bm06_pdefft bm07_percolation bm08_openmphistogram)
+if [ -z "${COMPILERS[@]}" ]; then
+    #COMPILERS=(gcc-12 gcc-13 gcc-14 gcc-15 intel-23 intel-24 aocc-5 clang-18 llvm-20 llvm-21)
+    COMPILERS=(gcc-12 gcc-13 gcc-14 gcc-15 intel-23 intel-24 aocc-5 llvm-21)
+fi
+
+if [ -z "${CODES[@]}" ]; then
+    CODES=(bm02_gameof1d bm03_hydrogen bm05_pkkfisher bm06_pdefft bm07_percolation bm08_openmphistogram bm09_mpihistogram)
+fi
 
 export TIME="%e s elapsed"
 
