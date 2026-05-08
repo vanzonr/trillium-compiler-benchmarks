@@ -26,7 +26,7 @@ if ! [ "${1:-}" = bigrun ]; then
     for c in ${COMPILERS[@]}; do
 	printf "+-------------------------------+\n+ Compiling with %-9s\t+\n+-------------------------------+\n" "$c"
 	source setup-$c
-	module -terse list | column -c72
+	module -t list | column -c72
 	for code in ${CODES[@]}; do
 	    echo "INFO: Compiling code \"$code\" with $c" 1>&2
 	    cd "$code"
